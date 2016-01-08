@@ -1,0 +1,83 @@
+@media screen and (min-width:480px) { 
+    
+/************************************
+TWO COLUMN LAYOUT
+************************************/
+
+    #primary {
+        width: 50%;
+        float: left;
+    }
+    
+    #secondary {
+        width: 40%;
+        float: right;
+    }
+    
+    
+/************************************
+PAGE: GALLERY
+************************************/
+
+    #gallery li {
+        width: 28.3333%;
+    }
+    
+/************************************
+PAGE: ABOUT
+************************************/
+
+    .profile-photo {
+        float: left;
+        margin: 0 5% 80px 0;
+}
+    h3 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:660px){ 
+    
+/************************************
+HEADER
+************************************/
+    
+     nav {
+        border-top: 2px solid dodgerblue;
+        float: right;
+        font-size: 1.125em;
+        text-align: right;
+        width: 100%;
+    }   
+    
+    #logo {
+        float: left;
+        margin-left: 5%;
+        text-align: left;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    h2 {
+        font-size: 0.825em;
+        margin-bottom: 20px;
+    }
+    
+    header {
+        border-bottom: 2px solid dodgerblue;
+        margin-bottom: 60px;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+    
+    
+    
+    
+    
+    
+}

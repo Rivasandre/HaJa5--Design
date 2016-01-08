@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>HaJa5 | Design</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+<style type="text/css">
+    a.fancybox img {
+        border: none;
+    } 
+</style>
+        
+    </head>
+    <body>
+        <header class="hover08">
+            <a href="index.html" id="logo">
+            <img src="img/logo.png">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="selected">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="wrapper">
+            <section class="hover08">
+                <ul id="gallery">
+                    <li>
+                        <a href="img/bridge-color.jpg" class="fancybox">
+                            <img src="img/bridge-color.jpg" alt="" class="fancybox">
+                            <p>PhiPhi Island</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/cave-color.jpg" class="fancybox">
+                            <img src="img/cave-color.jpg" alt="" class="fancybox">
+                            <p>Aroy!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/focus-color.jpg" class="fancybox">
+                            <img src="img/focus-color.jpg" alt="" class="fancybox">
+                            <p>Bat Cave.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/market.jpg" class="fancybox">
+                            <img src="img/market.jpg" alt="" class="fancybox">
+                            <p>AIS Model.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/model.jpg" class="fancybox">
+                            <img src="img/model.jpg" alt="" class="fancybox">
+                            <p>Asiatique.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/monk.jpg" class="fancybox">
+                            <img src="img/monk.jpg" alt="" class="fancybox">
+                            <p>Rocky bridge.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/pattaya.jpg" class="fancybox">
+                            <img src="img/pattaya.jpg" alt="" class="fancybox">
+                            <p>Focus. Strong!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/rearview.jpg" class="fancybox">
+                            <img src="img/rearview.jpg" alt="" class="fancybox">
+                            <p>Chada Jenner.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/runway-color.jpg" class="fancybox">
+                            <img src="img/runway-color.jpg" alt="" class="fancybox">
+                            <p>Mountain top Wat.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/shells.jpg" class="fancybox">
+                            <img src="img/shells.jpg" alt="" class="fancybox">
+                            <p>AIS Model.</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="img/smirk.jpg" class="fancybox">
+                            <img src="img/smirk.jpg" alt="" class="fancybox">
+                            <p>AIS Model.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/walkway.jpg" class="fancybox">
+                            <img src="img/walkway.jpg" alt="" class="fancybox">
+                            <p>AIS Model.</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <a href="http://twitter.com/nickrp"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+                <a href="http://facebook.com/Andrerivas"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+                <p>&copy; 2014 Andre Rivas.</p>
+            </footer>
+        </div>
+        
+        <!--image enlarge effect-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+<script type="text/javascript">
+    $(function($){
+        var addToAll = false;
+        var gallery = true;
+        var titlePosition = 'inside';
+        $(addToAll ? 'img' : 'img.fancybox').each(function(){
+            var $this = $(this);
+            var title = $this.attr('title');
+            var src = $this.attr('data-big') || $this.attr('src');
+            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+            $this.wrap(a);
+        });
+        if (gallery)
+            $('a.fancybox').attr('rel', 'fancyboxgallery');
+        $('a.fancybox').fancybox({
+            titlePosition: titlePosition
+        });
+    });
+    $.noConflict();
+</script>
+        
+    </body>
+</html>
